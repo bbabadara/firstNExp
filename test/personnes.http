@@ -1,0 +1,18 @@
+###
+GET  http://localhost:3000/api/personnes
+###
+GET  http://localhost:3000/api/personnes/1
+
+###
+POST  http://localhost:3000/api/personnes
+content-type: application/json
+
+{
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "age": 30,
+  "email": "duas@abc.com"
+}
+
+###Suprimer une personne
+DELETE  http://localhost:3000/api/personnes/2

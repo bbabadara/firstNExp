@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des personnes</title>
+</head>
+<body>
+  <h1>Liste des personnes</h1>
+  <ul id="liste"></ul>
+
+  <script>
+    fetch('http://localhost:3000/api/personnes')
+      .then(res => res.json())
+      .then(data => {
+        const liste = document.getElementById('liste');
+        data.forEach(p => {
+          const li = document.createElement('li');
+          li.textContent = `${p.prenom} ${p.nom} (${p.age} ans) - ${p.email}`;
+          liste.appendChild(li);
+        });
+      })
+      .catch(err => console.error('Erreur:', err));
+  </script>
+</body>
+</html>

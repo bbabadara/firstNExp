@@ -1,0 +1,239 @@
+{
+  "personnes": [
+    {
+      "id": 1,
+      "nom": "Ba",
+      "prenom": "Badara",
+      "age": 122,
+      "email": "bbabadara@gmail.com"
+    },
+    {
+      "id": 3,
+      "nom": "Sarr",
+      "prenom": "Baye Demba",
+      "age": 25,
+      "email": "abcjns@gmail.com"
+    },
+    {
+      "id": 4,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "age": 30,
+      "email": "duas@abc.com"
+    },
+    {
+      "id": 6,
+      "nom": "Faye",
+      "prenom": "Fatou",
+      "age": 25,
+      "email": "ftou@abc.com"
+    },
+    {
+      "id": 7,
+      "nom": "Ndoye",
+      "prenom": "Ngagne",
+      "age": 45,
+      "email": "ngndoye@abc.com"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "libelle": "Laitier"
+    },
+    {
+      "id": 2,
+      "libelle": "Viande"
+    },
+    {
+      "id": 3,
+      "libelle": "Poisson"
+    },
+    {
+      "id": 4,
+      "libelle": "Fruits"
+    },
+    {
+      "id": 5,
+      "libelle": "Legumes"
+    },
+    {
+      "id": 6,
+      "libelle": "Entretient"
+    },
+    {
+      "id": 7,
+      "libelle": "Tech"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "libelle": "Lait",
+      "prix": 5000,
+      "quantite": 18,
+      "categorie_id": 1
+    },
+    {
+      "id": 2,
+      "libelle": "Viande de boeuf",
+      "prix": 10000,
+      "quantite": 28,
+      "categorie_id": 2
+    },
+    {
+      "id": 3,
+      "libelle": "Poisson",
+      "prix": 2000,
+      "quantite": 10,
+      "categorie_id": 3
+    },
+    {
+      "id": 4,
+      "libelle": "Fruits",
+      "prix": 1000,
+      "quantite": 50,
+      "categorie_id": 4
+    },
+    {
+      "id": 5,
+      "libelle": "Legumes",
+      "prix": 500,
+      "quantite": 89,
+      "categorie_id": 5
+    },
+    {
+      "id": 6,
+      "libelle": "Clavier Gamer",
+      "prix": 59.99,
+      "quantite": 5,
+      "categorie_id": 7
+    },
+    {
+      "id": 7,
+      "libelle": "Clavier Gamer",
+      "prix": 59.99,
+      "quantite": 5,
+      "categorie_id": 7
+    }
+  ],
+  "dettes": [
+    {
+      "id": 1,
+      "date": "2023-10-01",
+      "personne_id": 1,
+      "articles": [
+        {
+          "article_id": 1,
+          "quantite": 2
+        },
+        {
+          "article_id": 2,
+          "quantite": 1
+        }
+      ]
+    }
+  ],
+  "dette": [
+    {
+      "id": 1,
+      "date": "2025-05-14",
+      "montant": 14000,
+      "personne_id": 1,
+      "articles": [
+        {
+          "id": 2,
+          "quantite": 1
+        },
+        {
+          "id": 3,
+          "quantite": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2025-05-14",
+      "montant": 60000,
+      "personne_id": 1,
+      "articles": [
+        {
+          "id": 2,
+          "quantite": 5
+        },
+        {
+          "id": 3,
+          "quantite": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2025-05-13",
+      "montant": 185000,
+      "personne_id": 4,
+      "articles": [
+        {
+          "id": 1,
+          "quantite": 20
+        },
+        {
+          "id": 2,
+          "quantite": 15
+        },
+        {
+          "id": 3,
+          "quantite": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2025-05-13",
+      "montant": 15500,
+      "personne_id": 1,
+      "articles": [
+        {
+          "id": 1,
+          "quantite": 2
+        },
+        {
+          "id": 2,
+          "quantite": 1
+        },
+        {
+          "id": 5,
+          "quantite": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "2025-05-12",
+      "montant": 1000,
+      "personne_id": 7,
+      "articles": [
+        {
+          "id": 5,
+          "quantite": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "2025-05-14",
+      "montant": 12500,
+      "personne_id": 4,
+      "articles": [
+        {
+          "id": 5,
+          "quantite": 5
+        },
+        {
+          "id": 2,
+          "quantite": 1
+        }
+      ]
+    }
+  ]
+}

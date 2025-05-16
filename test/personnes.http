@@ -1,18 +1,41 @@
 ###
 GET  http://localhost:3000/api/personnes
 ###
-GET  http://localhost:3000/api/personnes/1
+GET  http://localhost:3000/api/personnes/3
+Accept: application/json
 
 ###
 POST  http://localhost:3000/api/personnes
 content-type: application/json
 
 {
-  "nom": "Dupont",
-  "prenom": "Jean",
-  "age": 30,
-  "email": "duas@abc.com"
+  "nom": "Ndoye",
+  "prenom": "Ngagne",
+  "age": 45,
+  "email": "ngndoye@abc.com"
 }
 
 ###Suprimer une personne
 DELETE  http://localhost:3000/api/personnes/2
+
+###Modifier une personne
+PUT  http://localhost:3000/api/personnes/3
+content-type: application/json
+
+{
+  "nom": "Sarr",
+  "prenom": "Baye Demba",
+  "age": 25,
+  "email": "" 
+  }
+
+### categories
+GET  http://localhost:3000/api/categories/
+
+### ajouter une categorie
+POST  http://localhost:3000/api/categories
+content-type: application/json
+
+{
+  "libelle": "Entretient"
+}

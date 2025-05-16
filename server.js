@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const personnesRoutes = require('./routes/personnesRoutes');
+const categoriesRoutes = require('./routes/categoriesRoutes');
+const articlesRoutes = require('./routes/articlesRoutes');
+const dettesRoutes = require('./routes/dettesRoutes');
 
 
 const app = express();
@@ -19,6 +22,15 @@ app.get('/', (req, res) => {
 
 // Routes pour les personnes
 app.use('/api/personnes', personnesRoutes);
+
+// Routes pour les categories
+app.use('/api/categories', categoriesRoutes);
+
+// Routes pour les articles
+ app.use('/api/articles', articlesRoutes);
+ 
+// Routes pour les dettes
+ app.use('/api/dettes', dettesRoutes);
 
 
 app.listen(PORT, () => {
